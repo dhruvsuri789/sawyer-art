@@ -1,0 +1,12 @@
+/* Change the utility and custom styles here for responsiveness */
+/* Tablet and below */
+@media screen and (max-width: 991px) {
+}
+
+/* Mobile landscape and below */
+@media screen and (max-width: 767px) {
+}
+
+/* Mobile portrait and below */
+@media screen and (max-width: 479px) {
+}

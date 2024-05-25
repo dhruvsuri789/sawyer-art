@@ -1,0 +1,155 @@
+.section__contact {
+  color: var(--text-alternate);
+  background-color: var(--background-secondary);
+
+  &.is-background-white {
+    color: var(--text-secondary);
+    background-color: var(--background-alternate);
+
+    h2 {
+      color: var(--text-brand);
+    }
+  }
+}
+
+.contact_content-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.contact_form-wrapper {
+  width: 100%;
+  max-width: 48rem;
+  padding: 0 2rem;
+
+  form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+  }
+
+  label {
+    font-weight: 400;
+  }
+
+  span {
+    opacity: 0.7;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  select {
+    padding: 0.75rem 1rem;
+    border-radius: 999rem;
+    color: var(--text-primary);
+    transition: background-color 0.3s ease;
+
+    &::placeholder {
+      color: var(--text-color-neutral);
+    }
+
+    &:hover {
+      background-color: var(--background-hover-light);
+    }
+
+    &:focus {
+      outline: 1px solid var(--link-secondary);
+      outline-offset: 0.25rem;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 7rem;
+    padding: 1rem 1.25rem;
+    border-radius: 1.5rem;
+    color: var(--text-primary);
+
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--background-hover-light);
+    }
+
+    &:focus {
+      outline: 1px solid;
+      outline-offset: 0.25rem;
+      outline-color: var(--link-secondary);
+    }
+  }
+
+  .contact_form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-column: 1/-1;
+
+    &:first-child {
+      grid-column: 1;
+    }
+
+    &:nth-child(2) {
+      grid-column: 2;
+    }
+  }
+
+  &.is-background-white {
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      background-color: var(--background-primary);
+
+      &:hover {
+        background-color: var(--background-hover-lightest);
+      }
+    }
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .contact_content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    justify-items: center;
+
+    h2 {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+
+  .contact_form-wrapper {
+    max-width: 100%;
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact_form-wrapper {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .contact_form-wrapper {
+    padding: 0;
+
+    .contact_form-input {
+      &:first-child {
+        grid-column: 1/-1;
+      }
+
+      &:nth-child(2) {
+        grid-column: 1/-1;
+      }
+    }
+  }
+}

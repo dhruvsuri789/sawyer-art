@@ -1,0 +1,129 @@
+.services-hero_content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  color: var(--text-brand);
+
+  img {
+    width: 100%;
+    max-height: 26rem;
+    object-fit: cover;
+    border-top-left-radius: 999rem;
+    border-top-right-radius: 999rem;
+  }
+}
+
+.section__services-accordian {
+  color: var(--text-brand);
+  background-color: var(--background-primary);
+}
+
+.accordian_content-wrapper {
+  width: 100%;
+  padding-top: 1rem;
+  border-top: 1px solid;
+  border-top-color: inherit;
+
+  .accordian_heading-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+
+  ion-icon {
+    color: inherit;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .accordian {
+    padding: 4rem;
+    background-color: var(--background-alternate);
+
+    .accordian_container {
+      border-top: 1px solid;
+      border-top-color: inherit;
+      padding: 1rem 0 0.5rem 0;
+
+      &:last-child {
+        border-bottom: 1px solid;
+        border-bottom-color: inherit;
+      }
+
+      &.is-active {
+        .accordian_content {
+          opacity: 1;
+          height: 4rem;
+        }
+
+        .accordian_label > ion-icon {
+          transform: rotateZ(0deg);
+        }
+      }
+    }
+
+    .accordian_label {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 1rem;
+
+      & > h3,
+      & > ion-icon {
+        cursor: pointer;
+      }
+    }
+
+    .accordian_content {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 0.3s ease 0.2s, height 0.3s ease;
+    }
+
+    ion-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: rotateZ(180deg);
+      transition: transform 0.3s linear;
+    }
+  }
+}
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+  .accordian_content-wrapper {
+    .accordian_heading-wrapper {
+      padding-bottom: 2rem;
+    }
+
+    .accordian {
+      padding: 2rem;
+
+      .accordian_container {
+        &.is-active {
+          .accordian_content {
+            height: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .accordian_content-wrapper {
+    .accordian {
+      .accordian_container {
+        &.is-active {
+          .accordian_content {
+            height: 7.5rem;
+          }
+        }
+      }
+    }
+  }
+}

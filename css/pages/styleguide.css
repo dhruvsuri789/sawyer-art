@@ -1,0 +1,383 @@
+.section_styleguide-header {
+  color: var(--text-alternate);
+  background-color: var(--background-primary);
+
+  background-image: radial-gradient(
+      circle farthest-corner at 100% 100%,
+      rgba(221, 35, 187, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle farthest-corner at 0% 100%,
+      rgba(45, 98, 255, 0.3),
+      transparent 60%
+    );
+}
+
+.styleguide_header-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-items: start;
+  align-items: center;
+}
+
+.styleguide_hero-label {
+  padding: 0.25rem 0.375rem;
+  border-radius: 0.25rem;
+  color: var(--text-primary);
+  background-color: #eee;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.styleguide_heading-header {
+  font-size: 6rem;
+}
+
+/* .section_styleguide-headings {
+} */
+
+.styleguide_section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 6rem;
+  justify-items: start;
+  align-items: start;
+}
+
+.styleguide_section-header {
+  display: grid;
+  width: 100%;
+  padding-bottom: 3rem;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  border-bottom: solid 1px var(--border-primary);
+  line-height: 1.4;
+}
+
+.styleguide_item-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.styleguide_1-col {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+
+.styleguide_2-col {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 4rem;
+}
+
+.styleguide_3-col {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 4rem;
+}
+
+.styleguide_item {
+  display: grid;
+  padding-bottom: 3rem;
+  justify-items: start;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  gap: 1.125rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  border-bottom: solid 1px var(--border-primary);
+
+  &.is-stretch {
+    justify-items: stretch;
+  }
+}
+.styleguide_row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.styleguide_label {
+  display: flex;
+  padding: 0.3rem 0.75rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: var(--background-secondary);
+  color: var(--text-alternate);
+  font-weight: 600;
+
+  &.is-tag {
+    background-color: var(--background-tertiary);
+  }
+}
+.styleguide_item-header {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px var(--border-primary);
+}
+
+.styleguide_background-space {
+  width: 1px;
+  height: 1px;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+.styleguide_background {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+/* Form Component */
+.form_form {
+  width: 100%;
+}
+
+.form_field-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_input {
+  min-height: 3rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: solid 1px var(--border-primary);
+  background-color: transparent;
+  font-size: 1rem;
+
+  &::placeholder {
+    color: var(--text-secondary);
+  }
+
+  &.is-text-area {
+    min-height: 8rem;
+    padding-top: 0.75rem;
+    font-size: 1rem;
+  }
+
+  &.is-select-input {
+    color: var(--text-secondary);
+  }
+}
+
+.form_checkbox,
+.form_radio,
+.form_toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.form_checkbox-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin: 0 0.5rem 0 0;
+  border-radius: 0.125rem;
+
+  &:checked {
+    background-size: 90%;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0.25rem 0rem rgba(56, 152, 236, 1);
+  }
+}
+
+.form_checkbox-label,
+.form_radio-label,
+.form_toggle-label {
+  color: var(--text-secondary);
+  margin-bottom: 0rem;
+  cursor: pointer;
+}
+
+.form_radio-icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  margin: 0 0.5rem 0 0;
+
+  &:focus {
+    box-shadow: 0 0 0.25rem 0rem rgba(56, 152, 236, 1);
+  }
+}
+
+.form_toggle {
+  gap: 0.5rem;
+}
+
+/* 
+The given CSS code snippet is used to style an element when it is checked or selected.
+
+To write this code in natural language, you can say:
+
+"When the element is checked, set the background color to the value of the CSS variable --background-secondary. Additionally, move the pseudo-element before the checked element horizontally by a calculated amount. The calculation is performed using the calc function, which subtracts the values of the CSS variables --indicator-size and twice the value of --toggle-padding from the value of --toggle-width."
+*/
+
+.form_toggle input {
+  --toggle-height: 2rem;
+  --toggle-width: calc(1.8 * var(--toggle-height));
+  --toggle-padding: calc(var(--toggle-height) / 8);
+  --indicator-size: calc(var(--toggle-height) - 2 * var(--toggle-padding));
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+
+  height: var(--toggle-height);
+  width: var(--toggle-width);
+  background-color: var(--background-dark);
+  padding: var(--toggle-padding);
+  border-radius: var(--toggle-height);
+  border: none;
+  box-shadow: var(--inset-box-shadow);
+
+  transform: 0.1s linear background-color;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: var(--toggle-padding);
+    left: var(--toggle-padding);
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    background-color: var(--background-alternate);
+    border-radius: var(--indicator-size);
+    box-shadow: var(--box-shadow);
+    transform: translateX(0);
+    transition: 0.1s linear transform;
+  }
+
+  &:checked {
+    background-color: var(--background-secondary);
+
+    &::before {
+      transform: translateX(
+        calc(
+          var(--toggle-width) - var(--indicator-size) - 2 *
+            var(--toggle-padding)
+        )
+      );
+    }
+  }
+}
+
+.styleguide_radio-column {
+  display: grid;
+  min-height: 3rem;
+  align-items: center;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.styleguide_radio-field-1,
+.styleguide_radio-field-2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0rem;
+  padding: 0.5rem 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid hsla(213.33333333333331, 0%, 0%, 1);
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    border-color: hsla(0, 0%, 41.33%, 1);
+    color: hsla(0, 0%, 41.33%, 1);
+    opacity: 1;
+  }
+
+  &.is-active {
+    color: var(--background-alternate);
+    background-color: var(--background-secondary);
+    border-color: var(--background-secondary);
+
+    .styleguide_radio-icon-1 {
+      color: var(--link-alternate);
+    }
+  }
+}
+
+.styleguide_radio-icon-1,
+.styleguide_radio-icon-2 {
+  position: relative;
+  z-index: 1;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.styleguide_radio-button-1,
+.styleguide_radio-button-2 {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-style: none;
+  border-radius: 0;
+  box-shadow: 1px 1px 3px 0 transparent;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    box-shadow: none;
+    outline-color: hsla(0, 0%, 60.67%, 1);
+    outline-offset: 4px;
+    outline-style: solid;
+    outline-width: 2px;
+  }
+}
+
+.styleguide_radio-label-1,
+.styleguide_radio-label-2 {
+  position: relative;
+  margin-bottom: 0rem;
+  font-weight: 500;
+  cursor: pointer;
+}

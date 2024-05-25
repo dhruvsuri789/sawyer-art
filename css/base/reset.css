@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  font: inherit;
+  color: inherit;
+  /* vertical-align: baseline; */
+}
+
+html {
+  box-sizing: border-box;
+  /* 
+  We are folowing the rule 1rem = 16px(default font size).
+  If you want 1rem = 10px then change the font-size: 62.5%
+  62.5 % 16 = 10
+  If you want 1rem = 16px then change the font-size: 100%
+  */
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Got from normalize */
+/* article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+} */
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

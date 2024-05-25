@@ -1,0 +1,150 @@
+/* ALl the global colors are maintained here.
+  Change it based on your project requirements.
+
+*/
+
+:root {
+  /* Common Colors */
+  --base-color-brand--pure-white: #ffffff;
+  --base-color-brand--pure-black: #000;
+
+  /* Neutral Colors */
+  --base-color-neutral--white: #fff;
+  --base-color-neutral--neutral-lightest: #f3f3f3;
+  --base-color-neutral--neutral: #666;
+}
+
+:root[data-theme="brown"] {
+  /* Base color tokens - Project colors */
+  /* Brand Colors */
+  /* Theme default - Brown */
+  /* 
+#EAEAEA
+#5F2011
+#160D0C 
+#c3aeaa
+#5f1f11ce
+#F9F9F8
+*/
+
+  /* Brand Colors */
+  --base-color-brand--brown-light: #c3aeaa;
+  --base-color-brand--brown-dark: #5f1f11;
+  --base-color-brand--brown-dark-light: #5f1f11ce;
+  --base-color-brand--black: #160d0c;
+  --base-color-brand--white: #eaeaea;
+  --base-color-brand--white-light: #f9f9f8;
+
+  /* Semantic tokens - References the Base color tokens above*/
+  /* Background Colors */
+  --background-primary: var(--base-color-brand--white);
+  --background-secondary: var(--base-color-brand--brown-dark);
+  --background-tertiary: var(--base-color-brand--black);
+  --background-alternate: var(--base-color-brand--pure-white);
+  --background-hover: var(--base-color-brand--brown-dark-light);
+  --background-hover-light: var(--base-color-brand--brown-light);
+  --background-hover-lightest: var(--base-color-brand--white-light);
+
+  /* Border colors */
+  --border-primary: var(--base-color-brand--black);
+
+  /* Link Colors */
+  --link-primary: var(--base-color-brand--black);
+  --link-secondary: var(--base-color-brand--brown-light);
+
+  /* Text Colors */
+  --text-primary: var(--base-color-brand--pure-black);
+  --text-secondary: var(--base-color-brand--black);
+  --text-alternate: var(--base-color-neutral--white);
+  --text-brand: var(--base-color-brand--brown-dark);
+  --text-color-neutral: var(--base-color-neutral--neutral);
+  --text-color-brand-light: var(--base-color-brand--brown-light);
+}
+
+:root[data-theme="orange"] {
+  /* 
+#f7dfdb
+#fb221d
+#40140f
+#FF5248
+#fb221dce
+#FCEAE9
+*/
+
+  /* Brand Colors */
+  --base-color-brand--orange-light: #ff5248;
+  --base-color-brand--orange: #fb221d;
+  --base-color-brand--orange-dark: #fb221dce;
+  --base-color-brand--black: #40140f;
+  --base-color-brand--white: #f7dfdb;
+  --base-color-brand--white-light: #fceae9;
+
+  /* Semantic tokens - References the Base color tokens above*/
+  /* Background Colors */
+  --background-primary: var(--base-color-brand--white);
+  --background-secondary: var(--base-color-brand--orange);
+  --background-tertiary: var(--base-color-brand--black);
+  --background-alternate: var(--base-color-brand--pure-white);
+  --background-hover: var(--base-color-brand--orange-dark);
+  --background-hover-light: var(--base-color-brand--orange-light);
+  --background-hover-lightest: var(--base-color-brand--white-light);
+
+  /* Border colors */
+  --border-primary: var(--base-color-brand--black);
+
+  /* Link Colors */
+  --link-primary: var(--base-color-brand--black);
+  --link-secondary: var(--base-color-brand--orange-light);
+
+  /* Text Colors */
+  --text-primary: var(--base-color-brand--pure-black);
+  --text-secondary: var(--base-color-brand--black);
+  --text-alternate: var(--base-color-neutral--white);
+  --text-brand: var(--base-color-brand--orange);
+  --text-color-neutral: var(--base-color-neutral--neutral);
+  --text-color-brand-light: var(--base-color-brand--orange-light);
+}
+
+:root[data-theme="pink"] {
+  /* 
+#FDF0E6
+#EF8E80
+#0A0D63
+#F4A295
+#EF8E80ce
+#FDF6EF
+*/
+
+  /* Brand Colors */
+  --base-color-brand--pink-light: #f4a295;
+  --base-color-brand--pink: #ef8e80;
+  --base-color-brand--pink-dark: #ef8e80ce;
+  --base-color-brand--black: #0a0d63;
+  --base-color-brand--white: #fdf0e6;
+  --base-color-brand--white-light: #fdf6ef;
+
+  /* Semantic tokens - References the Base color tokens above*/
+  /* Background Colors */
+  --background-primary: var(--base-color-brand--white);
+  --background-secondary: var(--base-color-brand--pink);
+  --background-tertiary: var(--base-color-brand--black);
+  --background-alternate: var(--base-color-brand--pure-white);
+  --background-hover: var(--base-color-brand--pink-dark);
+  --background-hover-light: var(--base-color-brand--pink-light);
+  --background-hover-lightest: var(--base-color-brand--white-light);
+
+  /* Border colors */
+  --border-primary: var(--base-color-brand--black);
+
+  /* Link Colors */
+  --link-primary: var(--base-color-brand--black);
+  --link-secondary: var(--base-color-brand--pink-light);
+
+  /* Text Colors */
+  --text-primary: var(--base-color-brand--pure-black);
+  --text-secondary: var(--base-color-brand--black);
+  --text-alternate: var(--base-color-neutral--white);
+  --text-brand: var(--base-color-brand--pink);
+  --text-color-neutral: var(--base-color-neutral--neutral);
+  --text-color-brand-light: var(--base-color-brand--pink-light);
+}
